@@ -19,12 +19,14 @@
             <div id="content">
                 <h1>{pagetitle}</h1>
                 {alerts}
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        {leftside}
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        {rightside}
+                <div class="container">
+                    <div class="row">
+                        <div class="span6">
+                            {leftside}
+                        </div>
+                        <div class="span6">
+                            {rightside}
+                        </div>
                     </div>
                 </div>
             </div>
