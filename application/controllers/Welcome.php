@@ -30,6 +30,7 @@ class Welcome extends Application
 
 		$count = 0;
 		foreach(array_reverse($tasks) as $task){
+			$task->priority = $this->priorities->get($task->priority)->name;
 			$display_task[] = (array) $task;
 			$count++;
 			if($count >= 5 ) break;
